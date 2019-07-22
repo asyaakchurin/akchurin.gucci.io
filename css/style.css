@@ -1,0 +1,347 @@
+/* RESET */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /*background-color:lightblue;*/
+  }
+}
+
+font-family: 'Nunito Sans', sans-serif;
+
+img {
+  width: 100%;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  color:lightgrey;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+a {
+  font-family: 'Nunito Sans', sans-serif;
+  color:lightgrey;
+}
+
+li {
+  font-family: 'Nunito Sans', sans-serif;
+  color:lightgrey;
+}
+
+span {
+  font-family: 'Nunito Sans', sans-serif;
+  color:black;
+/*  padding-left:5px;
+  padding-right:5px;*/
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.categories {
+  position:relative;
+/*  display:flex;
+  flex-direction:column;
+  align-items: center;*/
+  color:black;
+  width:100%;
+  height: 100%;
+  /*just added*/
+}
+
+.dropcat {
+  padding: 20px 0px;
+  display: inline-block;
+}
+
+.categories a{
+  color:black;
+}
+
+
+
+.dropdown {
+  position: absolute;
+  /*width: 100%;*/
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: solid 1px lightgrey;
+  display: none;
+  color: black;
+ /* overflow: visible;*/
+}
+
+.dropdown.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.right {
+  right: 0px;
+  width:200px;
+}
+
+.left {
+  width:200px;
+}
+
+
+.dropcatwide {
+  height: 100%;
+  padding: 20px 0px;
+  display: inline-block;
+}
+
+
+
+
+.dropdownwide {
+  position: relative;
+  /*used to be absolute*/
+  /*width: 100%;*/
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: solid 1px lightgrey;
+  display: none;
+  color: black;
+  overflow: visible;
+  height: 100%;
+}
+
+.dropdownwide.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/*.right {
+display:flex;
+justify-content: flex-end;
+}
+
+.left {
+display:flex;
+justify-content: flex-start;
+}*/
+
+
+/*.main-nav {
+  padding: 20px 50px;
+  display: inline-block;
+}*/
+/*maybe try this inline block thing*/
+
+.dropdown li {
+  text-align:center;
+  padding: 20px 5px;
+}
+
+.tile {
+  width: 25%;
+  height: 450px;
+  background-color: #E7E7E7;
+  border: 1px solid white;
+
+  -webkit-transition: height .5s, color .5s;
+  /*transition: width 1s, height 2s;*/
+  transition: all .5s;
+  transition-timing-function: linear;
+}
+
+  .tile:hover{
+    height:550px;
+    /*insert TK here about photo swap*/
+
+  }
+
+.tile-main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-bar{
+  width:100%;
+/*  height:55px;*/
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border-bottom: solid 1px lightgrey;*/
+  /*flex-direction:row;*/
+  flex-direction:column;
+/*  padding-right: 50px;
+  padding-left:50px;*/
+}
+
+.style-bar-container {
+  width: 100%;
+}
+
+/*size wide screen filter*/
+/*within categories div, dropwide*/
+/*drop wide split in checkboxes and buttons*/
+/*boxes split in product and*/
+
+.wide{
+width:100%;
+margin: 0;
+overflow: visible;
+
+}
+
+      .checkboxes {
+      width:100%;
+      display:flex;
+      /*justify-content: space-between;*/
+      align-items: center;
+      flex-direction:row;
+      }
+
+              .color-boxes {
+              width:100%;
+              display:flex;
+              /*justify-content: space-between;*/
+              align-items: center;
+              flex-direction:column;
+              flex-wrap:wrap;
+              }
+
+              .product-sizes {
+              width:100%;
+              display:flex;
+              /*justify-content: space-between;*/
+              align-items: center;
+              flex-direction:column;
+              flex-wrap:wrap;
+              }
+
+      .select-buttons {
+
+      }
+
+  .category {
+    font:lightgrey;
+    display:flex;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left:20px;
+  }
+
+  .filters {
+    font:black;
+    display:flex;
+    /*display:inline-block;*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+  padding-right: 20px;
+  padding-left:20px;
+
+  }
+
+.main-grid {
+/*needs to display as rows*/
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*justify-content:space-between;*/
+  justify-content: center;
+  align-items:center;
+  padding-right: 20px;
+  padding-left:20px;
+}
+
+  .row {
+  /*needs to display as row, push together*/
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+
+  }
+
+  .item {
+  /*need light grey background, minimal space in between but bigger padding on side*/
+  display:flex;
+  background-color:lightgrey;
+  padding-right:20px;
+  padding-left:20px;
+  height:400px;
+  width:300px;
+  justify-content: space-between;
+  border: solid 1px white;
+
+  -webkit-transition: height .5s, color .5s;
+  /*transition: width 1s, height 2s;*/
+  transition: all .5s;
+  transition-timing-function: linear;
+  }
+
+/*this is when you hover over the box and it turns white and longer*/
+  /*test adding an extra 150 to the height*/
+  .item:hover{
+    height:550px;
+    background-color:white;
+  }
+
+
+
+
+
+
+
